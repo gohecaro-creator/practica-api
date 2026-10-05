@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avisos rojos publicados por INTERPOL.">
+    <title>Avisos rojos de INTERPOL</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main class="contenedor">
+        <section class="panel" aria-labelledby="titulo">
+            <p class="etiqueta">Datos públicos</p>
+            <h1 id="titulo">Avisos rojos de INTERPOL</h1>
+            <p class="ayuda">Avisos publicados por INTERPOL, cargados directamente desde su API pública.</p>
+
+            <div class="barra-avisos">
+                <p id="estado" class="estado" role="status" aria-live="polite">Cargando avisos…</p>
+                <button id="boton-recargar" type="button">Actualizar</button>
+            </div>
+            <section id="lista-avisos" class="lista-avisos" aria-label="Lista de avisos rojos"></section>
+        </section>
+    </main>
+    <script src="scrip.js" defer></script>
+</body>
+</html>
